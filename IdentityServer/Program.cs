@@ -28,7 +28,7 @@ namespace IdentityServer
             }).Configure(app =>
             {
                 app.UseIdentityServer();
-            });
+            }).UseUrls("http://localhost:8021");
         }
     }
 }
